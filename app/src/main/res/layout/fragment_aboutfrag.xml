@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bhaveshpant.pbutton.aboutfrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:text="\n   APP IS STILL UNDER CONSTRUCTION \n\nThe main purpose of this app is to help the users at times of emergency. This app is not being developed with any intention to make profit but to help the entire community. Any misuse of this app will result to legal actions.\n\nDEVELOPER AND DESIGNER: \n  Bhavesh Pant \n  bp3955@gmail.com" />
+
+</FrameLayout>

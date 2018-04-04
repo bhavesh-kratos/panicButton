@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <SwitchPreference
+        android:key="faceb"
+        android:title="Post on Fb"
+        android:summary="Choose whether to post on fb on tap(In App feature only)"
+        android:defaultValue="false"
+        />
+    <SwitchPreference
+        android:key="email"
+        android:title="Send Email"
+        android:summary="Choose whether to send email on tap"
+        android:defaultValue="false"
+        />
+
+
+    <SwitchPreference
+        android:key="text"
+        android:title="Send Text"
+        android:summary="Choose whether to send text message                  on tap"
+        android:defaultValue="true"
+        />
+    <SwitchPreference
+        android:key="call"
+        android:title="Place Call"
+        android:summary="Choose whether to place a call on tap"
+        android:defaultValue="true"
+        />
+    <PreferenceCategory
+        android:title="Message Settings"
+        android:key="pref_message_sett">
+        <EditTextPreference
+            android:key="message_set"
+            android:title="Message"
+            android:summary="Type a message to be sent on tap"
+            android:dependency="choose_message"
+            android:defaultValue=""/>
+        <CheckBoxPreference
+            android:key="choose_message"
+            android:title="Send Message"
+            android:defaultValue="true"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Gesture"
+        android:key="volkey">
+        <CheckBoxPreference
+            android:key="volpress"
+            android:title="Volume Key"
+            android:summary="Choose whether to use app services on pressing volume key 3 times continously"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference
+            android:key="powerpress"
+            android:title="Power Key"
+            android:summary="Choose whether to use app services on pressing power key atleast 5 times continously"
+            android:defaultValue="false"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>
